@@ -27,10 +27,9 @@
     Route::get('/faleconosco/{id?}', function ($id = null){ 
         return "recebi o valor = $id"; 
     });
+    
+    //View->Controller
+    
+    Route::post('/contato', ['uses'=>'App\Http\Controllers\ContatoController@index']);
 
-
-    Route::post('/contato', ['uses' => 'app\Http\Controllers\form.php@index']);
-
-    Route::get('/form', function(){
-        return view('form');
-    });
+    
