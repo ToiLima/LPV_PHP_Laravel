@@ -10,7 +10,7 @@
             <!-- cria um input oculto com token -->
             <input type='text' name='NM' value=''>
             <input type='password' name='DTA' value=''>
-            <input type='submit' value='ok'>
+            <input type='submit' value='ok'> <!-- View -> Route-->
         </form>        
     </body>
 </html>

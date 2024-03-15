@@ -28,7 +28,7 @@
         return "recebi o valor = $id"; 
     });
     
-    //View->Controller
+    //Route -> Controller
     
     Route::post('/contato', ['uses'=>'App\Http\Controllers\ContatoController@index']);
 

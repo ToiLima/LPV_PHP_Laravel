@@ -10,17 +10,17 @@ class ContatoController extends Controller
         //return "Estou no controle";
         //dd($req);  
 
+        //Para o exercício do PDF de controladores e rotas.
+        $matriz = [[ "tema"=>"Interface acessivel", 
+                     "titulo" =>"App mobile com direitos da pessoa deficiente"],
+                   [ "tema"=>"Pedofilia", 
+                     "titulo" => "App mobile com orientações gerais aos pais" ]
+                  ]; 
+        return view("contato.index", compact('matriz'));
+        
         /*$contatos = [
-            ['NM'=>'HITLER', 'DTA'=>'1933'],
-            ['NM'=>'MUSSOLINE', 'DTA'=>'1922'],
-            ['NM'=>'HIROITO', 'DTA'=>'1926'],
-            ['NM'=>'HORTHY', 'DTA'=>'1920'],
-            ['NM'=>'FRANCO', 'DTA'=>'1936'],
-            ['NM'=>'SALAZAR', 'DTA'=>'1932']
+            ['NM'=>$req->NM, 'DTA'=>$req->DTA]
         ];*/
-        $contatos = [
-            ['NM'=>$req, 'DTA'=>$req]
-        ];
-        return view("contato.index", compact('contatos'));
+        //return view("contato.index", compact('contatos'));  //Controller -> View  
     }
 }
