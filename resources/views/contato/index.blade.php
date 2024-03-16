@@ -1,22 +1,12 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        
-    </head>
-    <body>
-        <h3>Essa é a visão Contatos</h3>
+@extends("layout.site")
 
-        <!--As duplas chaves são um compativel ao php echo-->
+@section("titulo", "contatos")
 
-        <!--Para o exercício do PDF de controladores e rotas.-->
-        @foreach ($matriz as $m)
-            <p>{{ $m['tema'] }}</p>
-            <p>{{ $m['titulo'] }}</p>
-        @endforeach
+@section("conteudo")
+    <h3>Essa é a visão Contatos</h3>
 
-        <!-- @foreach ($contatos as $contato)
-            <p>{{ $contato['NM'] }}</p>
-            <p>{{ $contato['DTA'] }}</p>
-        @endforeach -->
-    </body>
-</html>
+    @foreach ($contatos as $contato)
+        <p>{{ $contato['NM'] }}</p>
+        <p>{{ $contato['DTA'] }}</p>
+    @endforeach 
+ @endsection
