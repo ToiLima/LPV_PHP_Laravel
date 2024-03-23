@@ -30,6 +30,11 @@
     
     //Route -> Controller
     
+
     Route::post('/contato', ['uses'=>'App\Http\Controllers\ContatoController@index']);
+    
+    Route::view('/home', 'home');
+    Route::post('/calcular', ['uses'=>'App\Http\Controllers\imcController@calcularIMC']);
+
 
     

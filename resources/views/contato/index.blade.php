@@ -9,4 +9,4 @@
         <p>{{ $contato['NM'] }}</p>
         <p>{{ $contato['DTA'] }}</p>
     @endforeach 
- @endsection
+@endsection
